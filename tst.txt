@@ -1,3 +1,4 @@
 오늘 한 일
 1. git hub와 vscode 연동 및 파일 업로드
 2. 게임 물리엔진 제작 및 플레이와 github에 커밋
+3. ctrl + enter 커밋 전에 꼭 실행
