@@ -1,2 +1,3 @@
 오늘 한 일
-git hub와 vscode 연동 및 파일 업로드
+1. git hub와 vscode 연동 및 파일 업로드
+2. 게임 물리엔진 제작 및 플레이와 github에 커밋
