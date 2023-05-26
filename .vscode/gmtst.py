@@ -105,7 +105,7 @@ class Game:   # 게임 클래스
         return (x2 - x1) * spd / math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2), (y2 - y1) * spd / math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
  
     def textblinker(self, sentance = "start"):   # 대기 텍스트
-        menuToggle = True; blinkerText = canvas.create_text(320, 580, text ="< Please pless spacebar to " + sentance + ". >", fill = "red", font = ("둥근모꼴", 12))   # 깜박이 canvas 생성
+        menuToggle = True; blinkerText = canvas.create_text(320, 580, text ="< Please press spacebar to " + sentance + ". >", fill = "red", font = ("둥근모꼴", 12))   # 깜박이 canvas 생성
         while(True):   # 대기
             self.runtime += 1
             for key in self.keys:   # spacebar 누를시 다음으로
@@ -115,7 +115,7 @@ class Game:   # 게임 클래스
                 if menuToggle == True:
                     canvas.itemconfig(blinkerText, text = ""); menuToggle = False
                 else:
-                    canvas.itemconfig(blinkerText, text = "< Please pless spacebar to " + sentance + ". >"); menuToggle = True
+                    canvas.itemconfig(blinkerText, text = "< Please press spacebar to " + sentance + ". >"); menuToggle = True
             window.update(); time.sleep(0.01)
  
 class element:   # 오브젝트 원형
