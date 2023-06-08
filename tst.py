@@ -8,10 +8,10 @@ n = 1
 while n <= inputN:
     if n==1:
         valueN = inputN1
-        print(f"{n}번째 항의 값 : {valueN}")
+        #print(f"{n}번째 항의 값 : {valueN}")
         n += 1
         continue
     valueN = valueN * inputR
-    print(f"{n}번째 항의 값 : {valueN}")
+    #print(f"{n}번째 항의 값 : {valueN}")
     n += 1
 print(f"{inputN}번째 항의 값 {valueN}")
