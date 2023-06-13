@@ -66,7 +66,7 @@ class Game:   # 게임 클래스
                     self.score_before = score
  
                 self.runtime += 1   # 런타임 증가
-                if len(enemyObjects) < 10:   # 적 개체 수 제한
+                if len(enemyObjects) < 5:   # 적 개체 수 제한
                     if self.runtime % self.spontime == 0:
                         for i in range(4):
                             if self.runtime % (self.spontime * (i + 1) ** 2) == 0: obj_enemy = object_enemy(random.choice([-100, 740])+random.randrange(-50,50), random.choice([-100, 740])+random.randrange(-50,50), self.enemyvalue[i][0], self.enemyvalue[i][0], self.enemyvalue[i][1], obj_main, i)   # enemy 오브젝트 스폰
