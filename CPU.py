@@ -29,7 +29,7 @@ elif c == "*":
 elif c == "/":
     print(a/b)
 '''
-
+'''
 cf = 5 # 커피 가격을 200원
 while True:
     money = int(input("돈을 입력: "))
@@ -49,5 +49,21 @@ while True:
     if cf == 0:
         print("커피가 부족합니다. 금액을 다시 반환합니다. 반환 금액 %d" %money)
         break
+
+
+'''
+
+num1 = int(input('1보다 큰 정수 입력'))
+num2 = int(input('1보다 큰 정수 입력'))
+maxNum = 0
+
+for i in range(1, (num1 + 1)):
+    if num1 % i ==0 and num2 % i ==0:
+        print('공약수 : {}'.format(i))
+        maxNum = i
+print(f'최대 공약수 : {maxNum}')
+
+minNum= (num1 * num2) // maxNum
+print('최소공배수: {}'.format(minNum))
 
 

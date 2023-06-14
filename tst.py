@@ -15,3 +15,5 @@ while n <= inputN:
     #print(f"{n}번째 항의 값 : {valueN}")
     n += 1
 print(f"{inputN}번째 항의 값 {valueN}")
+
+
