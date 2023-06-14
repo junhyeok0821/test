@@ -6,7 +6,7 @@ while temp2 > 0:
     temp = temp2
     temp2 =temp1 % temp2
     temp1 = temp
-print(f'{num1}, {num2}의 최대공약수 {num}')
+print(f'{num1}, {num2}의 최대공약수 {temp1}')
 
 for n in range(1, (temp1 + 1)):
     if temp1 % n ==0:
